@@ -36,8 +36,7 @@ namespace Multiplication.Prime
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Prime Multiplication API",
-                    Description = "Return prime multiplication table"
+                    Title = "Application API"
                 });
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -65,7 +64,7 @@ namespace Multiplication.Prime
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Prime Multiplication API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Application API V1");
                 c.RoutePrefix = string.Empty;
             });
 
