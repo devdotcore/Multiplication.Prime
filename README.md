@@ -45,8 +45,10 @@ dotnet build
 ```markdown
 dotnet test
 ```
-5. Start the project directly on VS Code or run the following command -
+5. ***Create a new folder "Out" in ./src/Multiplication.Prime - This is where the output file will be generated.***
+
+6. Start the project directly on VS Code or run the following command -
 ```markdown
 dotnet run --project ./src/Multiplication.Prime/Multiplication.Prime.csproj
 ```
-5. By default, the API will be available on https://localhost:5001
+7. By default, the API will be available on https://localhost:5001
